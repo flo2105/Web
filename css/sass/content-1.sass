@@ -1,0 +1,58 @@
+#content-1
+	position: relative
+	background: #ffb2bf
+	z-index: -1
+
+	.boxes
+		justify-content: center
+		padding: 40px
+		margin-top: 60px
+		max-width: 1000px
+		left: 0
+		right: 0
+		margin: auto
+		ul
+			list-style: none
+			padding: 0
+			//grid-template-columns: repeat(3, auto)
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			flex-wrap: wrap
+			li
+				background: white
+				width: 0
+				height: 250px
+				flex: 1
+				display: flex
+				padding: 20px
+				margin: 20px
+				border-radius: 10px
+				box-shadow: 0px 15px 21px 0px rgba(0, 0, 0, 0.31)
+				flex-direction: column
+				color: #454545
+				transition: all 0.25s ease-out
+				&:hover
+					box-shadow: 0px 5px 41px 5px rgba(0, 0, 0, 0.31)
+					transform: translateY(-4px) scale(1.008)
+
+				@media(max-width:"810px")
+					width: fit-content
+					flex: none
+				.price
+					text-align: center
+					font-size: 500%
+					float: left
+					left: 0
+					right: 0
+					margin: auto
+					.up
+						float: right
+						margin-top: 20px
+						font-size: 30%
+				.description
+					font-size: 26px
+					text-align: center
+					align-self: center
+					word-wrap: break-word
+					margin-top: auto

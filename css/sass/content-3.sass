@@ -1,0 +1,53 @@
+#content-3
+	position: relative
+	background: #CF6198
+	z-index: -3
+
+	.boxes
+		justify-content: center
+		padding: 40px
+		margin-top: 0px
+		ul
+			list-style: none
+			padding: 0
+			//grid-template-columns: repeat(3, auto)
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			flex-wrap: wrap
+			li
+				background: white
+				width: 0
+				//flex: 1
+				display: flex
+				padding: 30px 50px 30px 50px
+				margin: 30px
+				border-radius: 10px
+				box-shadow: 0px 15px 21px 0px rgba(0, 0, 0, 0.31)
+				flex-direction: column
+				color: #454545
+				width: fit-content
+				transition: 0.3s ease-in-out
+				&:hover
+					box-shadow: 0px 5px 41px 5px rgba(0, 0, 0, 0.31)
+					transform: translateY(-4px) scale(1.005)
+				@media(max-width:"810px")
+					width: fit-content
+				.profile
+					box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.27)
+					border-radius: 100%
+					border: 5px solid white
+					width: 120px
+					img
+						width: 120px
+				.name
+					font-size: 20px
+					text-align: center
+					margin-top: 20px
+				.description
+					margin-top: 10px
+					font-size: 15px
+					text-align: center
+					align-self: center
+					word-wrap: break-word
+					//margin-top: auto
